@@ -143,7 +143,7 @@ main figure.mainbanner img {
   grid-column: 1/2;
   grid-row: 1/3; }
 main figure.mainbanner figcaption {
-  color: #2d2926;
+  color: #c8102e;
   font-size: 32px;
   grid-column: 1/2;
   grid-row: 1/3;
