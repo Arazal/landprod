@@ -116,9 +116,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 2%;
-  padding-right: 2%;
-  -webkit-box-shadow: 0 10px 5px -5px #c8102e;
-          box-shadow: 0 10px 5px -5px #c8102e; }
+  padding-right: 2%; }
   nav #about:hover {
     color: #eca154;
     cursor: pointer; }
@@ -236,8 +234,10 @@ main #linehauls {
 
 @media only screen and (min-width: 560px) {
   main figure.mainbanner figcaption {
-    font-size: 42px; } }
+    font-size: 42px;
+    grid-column: 1/2;
+    grid-row: 1/3; } }
 /* end media query */
 @media only screen and (min-width: 1140px) {
   main figure.mainbanner figcaption {
-    font-size: 52px; } }
+    font-size: 72px; } }
