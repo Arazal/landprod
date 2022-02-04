@@ -153,30 +153,6 @@ main figure.mainbanner figcaption {
   opacity: 0.65; }
   main figure.mainbanner figcaption #slogan {
     color: #c8102e; }
-main #logos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 2%;
-  -webkit-box-shadow: 0 10px 5px -5px #c8102e;
-          box-shadow: 0 10px 5px -5px #c8102e; }
-main #air:hover {
-  content: url(/1F6EB_color.e2c44dd5.png); }
-main #car:hover {
-  content: url(/1F69B_color.a22768f8.png); }
-main #warehouse:hover {
-  content: url(/1F3EC_color.3e897111.png); }
-main #routes:hover {
-  content: url(/E244_color.fc92f494.png); }
-main .airvechiles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
 main #callbtn {
   height: 50px;
   display: -webkit-box;
@@ -236,45 +212,33 @@ main #linehauls {
           justify-content: center;
   margin-top: 25px; }
 
-footer {
-  color: white; }
-  footer #footer:hover {
-    color: #c8102e;
-    cursor: pointer; }
+#footerwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#copy {
+  color: white;
+  opacity: 0.85; }
+
+#copy:hover {
+  color: #c8102e;
+  cursor: pointer; }
 
 @media only screen and (min-width: 560px) {
   nav #about {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-
-  main figure.mainbanner figcaption {
-    font-size: 52px;
-    grid-column: 1/2;
-    grid-row: 1/3;
-    justify-self: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-    opacity: 0.65; }
-  main #logos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 2%;
-    -webkit-box-shadow: 0 10px 5px -5px #c8102e;
-            box-shadow: 0 10px 5px -5px #c8102e; }
-  main #cards {
-    margin: auto;
-    max-width: 60%;
-    display: grid;
-    grid-template-columns: 1fr 1fr; } }
+    display: flex; } }
 /* end media query */
 @media only screen and (min-width: 1140px) {
   main figure.mainbanner figcaption {
-    font-size: 72px;
+    font-size: 52px;
     grid-column: 1/2;
     grid-row: 1/3;
     justify-self: center;

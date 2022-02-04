@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"Focm":[function(require,module,exports) {
-var footer = document.getElementById("footer");
+var footer = document.getElementById("copy");
 var currentYear = new Date().getFullYear();
 footer.innerHTML = "&copy ".concat(currentYear, " SF Eastern Europe Region");
 },{}]},{},["Focm"], null)
