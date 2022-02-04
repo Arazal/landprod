@@ -98,17 +98,20 @@ html {
 
 body {
   font-family: 'Noto Serif', serif;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  background-color: #bbbcbc;
+  opacity: 0.95; }
 
 nav {
   height: 70px;
-  background-color: white;
+  background-color: #2d2926;
+  opacity: 0.98;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -116,8 +119,6 @@ nav {
   padding-right: 2%;
   -webkit-box-shadow: 0 10px 5px -5px #c8102e;
           box-shadow: 0 10px 5px -5px #c8102e; }
-  nav #about {
-    display: none; }
   nav #about:hover {
     color: #eca154;
     cursor: pointer; }
@@ -129,6 +130,8 @@ main figure.mainbanner {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
+  -webkit-box-shadow: 0 10px 5px -5px #c8102e;
+          box-shadow: 0 10px 5px -5px #c8102e;
   overflow: hidden; }
   main figure.mainbanner :hover {
     -webkit-transform: scale(1.1);
@@ -230,11 +233,6 @@ main #linehauls {
   color: #c8102e;
   cursor: pointer; }
 
-@media only screen and (min-width: 560px) {
-  nav #about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
 /* end media query */
 @media only screen and (min-width: 1140px) {
   main figure.mainbanner figcaption {
