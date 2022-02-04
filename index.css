@@ -128,8 +128,9 @@ nav {
 main figure.mainbanner {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
+  font-size: 32px;
+  grid-column: 1/2;
+  grid-row: 1/3;
   -webkit-box-shadow: 0 10px 5px -5px #c8102e;
           box-shadow: 0 10px 5px -5px #c8102e;
   overflow: hidden; }
@@ -147,7 +148,7 @@ main figure.mainbanner img {
   grid-row: 1/3; }
 main figure.mainbanner figcaption {
   color: white;
-  font-size: 32px;
+  font-size: 22px;
   grid-column: 1/2;
   grid-row: 1/3;
   justify-self: center;
@@ -233,18 +234,10 @@ main #linehauls {
   color: #c8102e;
   cursor: pointer; }
 
+@media only screen and (min-width: 560px) {
+  main figure.mainbanner figcaption {
+    font-size: 42px; } }
 /* end media query */
 @media only screen and (min-width: 1140px) {
   main figure.mainbanner figcaption {
-    font-size: 52px;
-    grid-column: 1/2;
-    grid-row: 1/3;
-    justify-self: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-    opacity: 0.65; }
-  main #cards {
-    margin: auto;
-    max-width: 60%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; } }
+    font-size: 52px; } }
