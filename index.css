@@ -237,18 +237,7 @@ main #linehauls {
   margin-top: 25px; }
 
 footer {
-  height: 70px;
-  background-color: #2d2926;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  color: white; }
   footer #footer:hover {
     color: #c8102e;
     cursor: pointer; }
