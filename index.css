@@ -151,8 +151,8 @@ main figure.mainbanner figcaption {
   -ms-flex-item-align: center;
       align-self: center;
   opacity: 0.65; }
-main .spanbanner {
-  color: #eca154; }
+  main figure.mainbanner figcaption #slogan {
+    color: #c8102e; }
 main #logos {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -260,7 +260,6 @@ footer {
     display: flex; }
 
   main figure.mainbanner figcaption {
-    color: white;
     font-size: 52px;
     grid-column: 1/2;
     grid-row: 1/3;
@@ -268,8 +267,6 @@ footer {
     -ms-flex-item-align: center;
         align-self: center;
     opacity: 0.65; }
-    main figure.mainbanner figcaption #slogan {
-      color: #c8102e; }
   main #logos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -288,7 +285,6 @@ footer {
 /* end media query */
 @media only screen and (min-width: 1140px) {
   main figure.mainbanner figcaption {
-    color: white;
     font-size: 72px;
     grid-column: 1/2;
     grid-row: 1/3;
