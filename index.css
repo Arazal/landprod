@@ -98,9 +98,7 @@ html {
 
 body {
   font-family: 'Noto Serif', serif;
-  font-family: 'Roboto', sans-serif;
-  background-color: #bbbcbc;
-  opacity: 0.95; }
+  font-family: 'Roboto', sans-serif; }
 
 nav {
   height: 70px;
@@ -129,8 +127,6 @@ main figure.mainbanner {
   font-size: 32px;
   grid-column: 1/2;
   grid-row: 1/3;
-  -webkit-box-shadow: 0 10px 5px -5px #c8102e;
-          box-shadow: 0 10px 5px -5px #c8102e;
   overflow: hidden; }
   main figure.mainbanner :hover {
     -webkit-transform: scale(1.1);
@@ -152,9 +148,10 @@ main figure.mainbanner figcaption {
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
-  opacity: 0.65; }
-  main figure.mainbanner figcaption #slogan {
-    color: #c8102e; }
+  opacity: 0.85; }
+  main figure.mainbanner figcaption .slogan {
+    color: #c8102e;
+    font-family: 'Fugaz One', cursive; }
 main #callbtn {
   height: 50px;
   display: -webkit-box;
@@ -213,6 +210,10 @@ main #linehauls {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 25px; }
+
+footer {
+  -webkit-box-shadow: 0 -10px 10px 0 #c8102e;
+          box-shadow: 0 -10px 10px 0 #c8102e; }
 
 #footerwrapper {
   display: -webkit-box;
