@@ -124,10 +124,22 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+var about = document.getElementById('about');
+var icon = document.getElementById('icon');
+var infra = document.getElementById('infra');
+about.addEventListener('click', function () {
+  document.location.href = 'about.html';
+});
+infra.addEventListener('click', function () {
+  document.location.href = 'infrastructure.html';
+});
+icon.addEventListener('click', function () {
+  document.location.href = 'index.html';
+});
 gsap.registerPlugin(ScrollTrigger);
-var footer = document.getElementById("copy");
+var footer1 = document.getElementById("copymain");
 var currentYear = new Date().getFullYear();
-footer.innerHTML = "&copy ".concat(currentYear, " SF Eastern Europe Region");
+footer1.innerHTML = "&copy ".concat(currentYear, " SF Eastern Europe Region");
 var proxy = {
   skew: 0
 },
