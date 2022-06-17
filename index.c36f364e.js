@@ -81,33 +81,35 @@ gsap.to("#sfcar", {
     repeat: -1,
     repeatDelay: 2
 });
-const tl = gsap.timeline();
-tl.to("#car1", {
-    duration: 1,
-    x: document.documentElement.clientWidth / 2 - 200,
-    ease: "circ"
-})// insert 1 second after end of timeline
-.to("#car2", {
-    duration: 1,
-    x: document.documentElement.clientWidth / 2 - 200
-}, "+=1")// insert 1 second after end of timeline
-.to("#car3", {
-    duration: 1,
-    x: document.documentElement.clientWidth / 2 - 200
-}, "+=1").to("#car4", {
-    duration: 1,
-    x: document.documentElement.clientWidth / 2 - 200
-}, "+=1").to("#car5", {
-    duration: 1,
-    x: document.documentElement.clientWidth / 2 - 200
-}, "+=1").to("#car6", {
-    duration: 1,
-    x: document.documentElement.clientWidth / 2 - 200
-}, "+=1").to("#car7", {
-    duration: 1,
-    x: document.documentElement.clientWidth / 2 - 200
-}, "+=1");
-tl.repeat(-1);
+if (document.body.clientWidth > 600) {
+    const tl = gsap.timeline();
+    tl.to("#car1", {
+        duration: 1,
+        x: document.documentElement.clientWidth / 2 - 200,
+        ease: "circ"
+    })// insert 1 second after end of timeline
+    .to("#car2", {
+        duration: 1,
+        x: document.documentElement.clientWidth / 2 - 200
+    }, "+=1")// insert 1 second after end of timeline
+    .to("#car3", {
+        duration: 1,
+        x: document.documentElement.clientWidth / 2 - 200
+    }, "+=1").to("#car4", {
+        duration: 1,
+        x: document.documentElement.clientWidth / 2 - 200
+    }, "+=1").to("#car5", {
+        duration: 1,
+        x: document.documentElement.clientWidth / 2 - 200
+    }, "+=1").to("#car6", {
+        duration: 1,
+        x: document.documentElement.clientWidth / 2 - 200
+    }, "+=1").to("#car7", {
+        duration: 1,
+        x: document.documentElement.clientWidth / 2 - 200
+    }, "+=1");
+    tl.repeat(-1);
+}
 gsap.to("#white-logo", 2, {
     rotation: 360,
     repeat: -1
